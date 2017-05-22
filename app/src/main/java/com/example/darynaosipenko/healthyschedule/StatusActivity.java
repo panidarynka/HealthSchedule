@@ -13,7 +13,7 @@ public class StatusActivity extends AppCompatActivity {
         setContentView(R.layout.activity_status);
     }
     public void onNextClick(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, CreateScheduleActivity.class);
         startActivity(intent);
     }
 }

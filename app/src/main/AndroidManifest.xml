@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".DataInputFirst" />
         <activity android:name=".InputData" />
-        <activity android:name=".StatusActivity"></activity>
+        <activity android:name=".StatusActivity" />
+        <activity android:name=".CreateScheduleActivity"></activity>
     </application>
 
 </manifest>
