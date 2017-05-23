@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".login.DataInput" />
         <activity android:name=".status.StatusActivity" />
-        <activity android:name=".create_schedule.CreateScheduleActivity"></activity>
+        <activity android:name=".create_schedule.CreateScheduleActivity" />
+        <activity android:name=".login.CreateAccountActivity"></activity>
     </application>
 
 </manifest>

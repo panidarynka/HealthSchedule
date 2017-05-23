@@ -7,20 +7,15 @@ import android.view.View;
 
 import com.example.darynaosipenko.healthyschedule.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class CreateAccountActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_create_account);
     }
-    public void onLoginClicked(View view){
-        Intent intent = new Intent(this, DataInput.class);
-        startActivity(intent);
+    public void onNextClicked(View view){
+        startActivity(new Intent(this, DataInput.class));
     }
-    public void onCreateAccountClicked(View view){
-        startActivity(new Intent(this, CreateAccountActivity.class));
-    }
-
 }
