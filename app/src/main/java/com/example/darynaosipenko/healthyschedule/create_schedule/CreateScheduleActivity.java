@@ -1,4 +1,4 @@
-package com.example.darynaosipenko.healthyschedule;
+package com.example.darynaosipenko.healthyschedule.create_schedule;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.darynaosipenko.healthyschedule.schedule.MainActivity;
+import com.example.darynaosipenko.healthyschedule.R;
 import com.example.darynaosipenko.healthyschedule.pojo.DayItem;
 import com.example.darynaosipenko.healthyschedule.utils.DayItemsAdapter;
 import com.example.darynaosipenko.healthyschedule.utils.RecyclerItemClickListener;

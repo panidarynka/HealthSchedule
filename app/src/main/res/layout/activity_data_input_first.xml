@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context="com.example.darynaosipenko.healthyschedule.DataInputFirst">
+    tools:context="com.example.darynaosipenko.healthyschedule.login.DataInput">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -13,17 +13,16 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
+
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:layout_gravity="center_horizontal"
-                    android:textSize="18dp"
-                    android:text="Please, input your start information"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <!--<TextView-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:text="Please, input your start information"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="72dp"
@@ -136,58 +135,58 @@
                     </RadioGroup>
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="72dp"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    >
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_margin="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_neck"
-                        android:id="@+id/iv_neckCF_label"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/neckCF"
-                        android:singleLine="true"
-                        android:inputType="numberDecimal"
-                        android:layout_marginRight="16dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/iv_neckCF_label"
-                        android:id="@+id/neckCF_ET"/>
-                </RelativeLayout>
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="72dp"-->
+                    <!--android:minHeight="?android:attr/listPreferredItemHeight"-->
+                    <!--&gt;-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="32dp"-->
+                        <!--android:layout_height="32dp"-->
+                        <!--android:layout_margin="16dp"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:src="@drawable/ic_neck"-->
+                        <!--android:id="@+id/iv_neckCF_label"-->
+                        <!--/>-->
+                    <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/neckCF"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:inputType="numberDecimal"-->
+                        <!--android:layout_marginRight="16dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_toRightOf="@+id/iv_neckCF_label"-->
+                        <!--android:id="@+id/neckCF_ET"/>-->
+                <!--</RelativeLayout>-->
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="72dp"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    >
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_margin="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_waist"
-                        android:id="@+id/iv_waistLineCF_label"
-                        />
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="72dp"-->
+                    <!--android:minHeight="?android:attr/listPreferredItemHeight"-->
+                    <!--&gt;-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="32dp"-->
+                        <!--android:layout_height="32dp"-->
+                        <!--android:layout_margin="16dp"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:src="@drawable/ic_waist"-->
+                        <!--android:id="@+id/iv_waistLineCF_label"-->
+                        <!--/>-->
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/waistLine"
-                        android:singleLine="true"
-                        android:inputType="numberDecimal"
-                        android:layout_marginRight="16dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/iv_waistLineCF_label"
-                        android:id="@+id/waistLineET"/>
-                </RelativeLayout>
+                    <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/waistLine"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:inputType="numberDecimal"-->
+                        <!--android:layout_marginRight="16dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_toRightOf="@+id/iv_waistLineCF_label"-->
+                        <!--android:id="@+id/waistLineET"/>-->
+                <!--</RelativeLayout>-->
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -216,16 +215,16 @@
                         android:id="@+id/loinsCF_ET"/>
                 </RelativeLayout>
 
-                <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:text="Next"
-                    android:background="#823b2cba"
-                    android:onClick="onNextClick"
-                    android:id="@+id/startButton"/>
+                <!--<Button-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="48dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_marginBottom="16dp"-->
+                    <!--android:text="Next"-->
+                    <!--android:background="#823b2cba"-->
+                    <!--android:onClick="onNextClick"-->
+                    <!--android:id="@+id/startButton"/>-->
             </LinearLayout>
         </ScrollView>
 

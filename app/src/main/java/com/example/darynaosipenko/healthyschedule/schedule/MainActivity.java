@@ -1,10 +1,12 @@
-package com.example.darynaosipenko.healthyschedule;
+package com.example.darynaosipenko.healthyschedule.schedule;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.example.darynaosipenko.healthyschedule.R;
 
 public class MainActivity extends AppCompatActivity {
 

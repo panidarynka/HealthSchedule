@@ -4,7 +4,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.darynaosipenko.healthyschedule.LoginActivity">
+    tools:context="com.example.darynaosipenko.healthyschedule.login.LoginActivity">
 
     <ImageView
         android:layout_width="match_parent"
