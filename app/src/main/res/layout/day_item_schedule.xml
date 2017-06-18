@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="54dp"
@@ -13,8 +13,10 @@
         android:paddingLeft="10dp">
 
         <LinearLayout
+            android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
@@ -34,12 +36,16 @@
         </LinearLayout>
 
         <View
+            android:id="@+id/dev"
             android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/divider" />
+            android:layout_height="56dp"
+            android:background="@color/divider"
+            android:layout_toRightOf="@+id/time" />
 
         <TextView
+            android:layout_toRightOf="@+id/dev"
             android:id="@+id/day_action"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -47,13 +53,23 @@
             android:text="@string/app_name" />
 
         <TextView
+            android:layout_toRightOf="@+id/day_action"
             android:id="@+id/count"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             android:visibility="invisible" />
-    </LinearLayout>
+        <CheckBox
+            android:id="@+id/check_done"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"

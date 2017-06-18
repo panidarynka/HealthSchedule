@@ -7,7 +7,7 @@
     <string name="age">Age</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
-    <string name="neckCF">Neck Circumference</string>
+    <string name="neckCF">Physical Activity</string>
     <string name="waistLine">Waist line</string>
     <string name="loinsCF">Loins Circumference</string>
     <string name="fatPers">Fat percentage</string>
@@ -26,5 +26,6 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_weight">Weight</string>
     <string name="title_activity_first">FirstActivity</string>
-
+    <string name="app_info">This is your daily schedule! Do not forget to input information that it can customize to you.</string>
+    <string name="activity_info">Too small - passive lifestyle.\nSmall - light exercise 1-3 times per week.\nMiddle - middle exercise 3-6 times per week.\nBig - hard exercise 6-7 times per week.\nToo big - so hard exercise two times per day or hard physical work.</string>
 </resources>

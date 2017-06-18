@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.darynaosipenko.healthyschedule">
-
+    package="com.health.darynaosipenko.healthyschedule">
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".schedule.MainActivity" />
-        <activity android:name=".login.LoginActivity">
+        <activity android:name="com.health.darynaosipenko.healthyschedule.schedule.ScheduleActivity" />
+        <activity android:name="com.health.darynaosipenko.healthyschedule.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".login.DataInput" />
-        <activity android:name=".status.StatusActivity" />
-        <activity android:name=".create_schedule.CreateScheduleActivity" />
-        <activity android:name=".login.CreateAccountActivity"></activity>
+        <activity android:name="com.health.darynaosipenko.healthyschedule.login.DataInput" />
+        <activity android:name="com.health.darynaosipenko.healthyschedule.status.StatusActivity">
+        </activity>
+        <activity android:name="com.health.darynaosipenko.healthyschedule.create_schedule.CreateScheduleActivity">
+
+        </activity>
     </application>
 
 </manifest>

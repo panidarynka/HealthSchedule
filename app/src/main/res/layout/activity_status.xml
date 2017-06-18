@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.darynaosipenko.healthyschedule.status.StatusActivity">
+    tools:context="com.health.darynaosipenko.healthyschedule.status.StatusActivity">
 
     <ImageView
         android:id="@+id/icon"
@@ -24,37 +24,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/percent_image"
-        android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
-        android:text="30%" />
+        android:layout_marginBottom="10dp"
+        android:text="90,3%" />
 
     <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/percent_image"
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/user_info"
+
         android:layout_marginBottom="20dp">
 
         <View
             android:id="@+id/good"
-            android:background="@color/colorAccent"
-            app:layout_widthPercent="30%" />
+            android:background="@color/colorPrimary"
+            app:layout_widthPercent="90%" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toRightOf="@+id/good"
-            android:background="@color/colorPrimary" />
+            android:background="@color/colorAccent" />
     </android.support.percent.PercentRelativeLayout>
 
-    <!--<Button-->
-        <!--android:id="@+id/startButton"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:background="#823b2cba"-->
-        <!--android:onClick="onNextClick"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:text="Next" />-->
+    <LinearLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/imt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/percent_image"
+            android:text="Ви маєте надлишкову вагу 8,5 кг" />
+
+        <TextView
+            android:id="@+id/pa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/percent_image"
+            android:layout_marginTop="10dp"
+            android:text="Вам потрібно більше рухатися" />
+    </LinearLayout>
 </RelativeLayout>

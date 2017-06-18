@@ -5,224 +5,160 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context="com.example.darynaosipenko.healthyschedule.login.DataInput">
+    tools:context="com.health.darynaosipenko.healthyschedule.login.DataInput">
 
-        <ScrollView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <!--<TextView-->
-                    <!--android:layout_gravity="center_horizontal"-->
-                    <!--android:textSize="18dp"-->
-                    <!--android:text="Please, input your start information"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content" />-->
-                <RelativeLayout
+                android:layout_height="70dp"
+                android:minHeight="?android:attr/listPreferredItemHeight">
+
+                <ImageView
+                    android:id="@+id/iv_height_label"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_height" />
+
+                <EditText
+                    android:id="@+id/heightET"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    >
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_margin="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_height"
-                        android:id="@+id/iv_height_label"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/height"
-                        android:singleLine="true"
-                        android:inputType="numberDecimal"
-                        android:layout_marginRight="16dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/iv_height_label"
-                        android:id="@+id/heightET"
-                        />
-                </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/iv_height_label"
+                    android:hint="@string/height"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </RelativeLayout>
 
-                <RelativeLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:minHeight="?android:attr/listPreferredItemHeight">
+
+                <ImageView
+                    android:id="@+id/iv_weight_label"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_weight" />
+
+                <EditText
+                    android:id="@+id/weightET"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    >
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_margin="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_weight"
-                        android:id="@+id/iv_weight_label"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/weight"
-                        android:singleLine="true"
-                        android:inputType="numberDecimal"
-                        android:layout_marginRight="16dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/iv_weight_label"
-                        android:id="@+id/weightET"
-                        />
-                </RelativeLayout>
-                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/iv_weight_label"
+                    android:hint="@string/weight"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:minHeight="?android:attr/listPreferredItemHeight">
+
+                <ImageView
+                    android:id="@+id/iv_age_label"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_age" />
+
+                <EditText
+                    android:id="@+id/ageET"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    >
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_margin="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_age"
-                        android:id="@+id/iv_age_label"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/iv_age_label"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:minHeight="?android:attr/listPreferredItemHeight">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="@string/age"
-                        android:singleLine="true"
-                        android:inputType="number"
-                        android:layout_marginRight="16dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/iv_age_label"
-                        android:id="@+id/ageET"/>
-                </RelativeLayout>
+                        android:checked="true"
+                        android:text="@string/male" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    >
-
-                    <RadioGroup
-                        android:layout_width="fill_parent"
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_margin="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:id="@+id/radioGroup">
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/female" />
+                </RadioGroup>
+            </RelativeLayout>
 
-                        <RadioButton
-                            android:id="@+id/radioMale"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/male"
-                            android:checked="true"
-                            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:minHeight="?android:attr/listPreferredItemHeight">
 
-                        <RadioButton
-                            android:id="@+id/radioFemale"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/female"
-                            android:layout_marginLeft="16dp"
-                            />
-                    </RadioGroup>
-                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/iv_neckCF_label"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_sport" />
 
-                <!--<RelativeLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="72dp"-->
-                    <!--android:minHeight="?android:attr/listPreferredItemHeight"-->
-                    <!--&gt;-->
-                    <!--<ImageView-->
-                        <!--android:layout_width="32dp"-->
-                        <!--android:layout_height="32dp"-->
-                        <!--android:layout_margin="16dp"-->
-                        <!--android:layout_alignParentLeft="true"-->
-                        <!--android:layout_centerVertical="true"-->
-                        <!--android:src="@drawable/ic_neck"-->
-                        <!--android:id="@+id/iv_neckCF_label"-->
-                        <!--/>-->
-                    <!--<EditText-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:hint="@string/neckCF"-->
-                        <!--android:singleLine="true"-->
-                        <!--android:inputType="numberDecimal"-->
-                        <!--android:layout_marginRight="16dp"-->
-                        <!--android:layout_centerVertical="true"-->
-                        <!--android:layout_toRightOf="@+id/iv_neckCF_label"-->
-                        <!--android:id="@+id/neckCF_ET"/>-->
-                <!--</RelativeLayout>-->
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/info"
+                    android:layout_toRightOf="@+id/iv_neckCF_label" />
 
-                <!--<RelativeLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="72dp"-->
-                    <!--android:minHeight="?android:attr/listPreferredItemHeight"-->
-                    <!--&gt;-->
-                    <!--<ImageView-->
-                        <!--android:layout_width="32dp"-->
-                        <!--android:layout_height="32dp"-->
-                        <!--android:layout_margin="16dp"-->
-                        <!--android:layout_alignParentLeft="true"-->
-                        <!--android:layout_centerVertical="true"-->
-                        <!--android:src="@drawable/ic_waist"-->
-                        <!--android:id="@+id/iv_waistLineCF_label"-->
-                        <!--/>-->
-
-                    <!--<EditText-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:hint="@string/waistLine"-->
-                        <!--android:singleLine="true"-->
-                        <!--android:inputType="numberDecimal"-->
-                        <!--android:layout_marginRight="16dp"-->
-                        <!--android:layout_centerVertical="true"-->
-                        <!--android:layout_toRightOf="@+id/iv_waistLineCF_label"-->
-                        <!--android:id="@+id/waistLineET"/>-->
-                <!--</RelativeLayout>-->
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="72dp"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    android:id="@+id/rl_loins_container"
-                    android:visibility="gone"
-                    >
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_margin="16dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_hips"
-                        android:id="@+id/iv_loinsCF_label"
-                        />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/loinsCF"
-                        android:inputType="numberDecimal"
-                        android:layout_marginRight="16dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/iv_loinsCF_label"
-                        android:id="@+id/loinsCF_ET"/>
-                </RelativeLayout>
-
-                <!--<Button-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="48dp"-->
-                    <!--android:layout_marginLeft="16dp"-->
-                    <!--android:layout_marginRight="16dp"-->
-                    <!--android:layout_marginBottom="16dp"-->
-                    <!--android:text="Next"-->
-                    <!--android:background="#823b2cba"-->
-                    <!--android:onClick="onNextClick"-->
-                    <!--android:id="@+id/startButton"/>-->
-            </LinearLayout>
-        </ScrollView>
+                <ImageView
+                    android:onClick="onInfoClicked"
+                    android:id="@+id/info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/ic_info" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

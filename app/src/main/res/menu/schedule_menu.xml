@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item app:showAsAction="always"
-        android:id="@+id/schedule_next"
-        android:icon="@mipmap/ic_arrow_forward"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit_schedule"
+        android:title="Edit Schedule" />
+    <item
+        android:id="@+id/show_status"
+        android:title="Show status" />
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign out" />
 
 </menu>
